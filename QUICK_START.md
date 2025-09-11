@@ -7,6 +7,7 @@
 ## 📝 Adding New Content
 
 ### 1. Quick Blog Post
+
 ```bash
 # Create a new blog post
 cat > content/my-new-post.md << 'EOF'
@@ -31,6 +32,7 @@ zola serve
 ```
 
 ### 2. Adding a Photo to Gallery
+
 ```bash
 # Step 1: Add image to static folder
 cp ~/Downloads/your-photo.jpg static/images/
@@ -52,6 +54,7 @@ EOF
 ```
 
 ### 3. Sync from Obsidian
+
 ```bash
 # Run sync script
 python3 sync_second_brain.py
@@ -68,7 +71,9 @@ zola build
 ## 🎨 Quick Style Changes
 
 ### Change Site Colors
+
 Edit `config.toml`:
+
 ```toml
 [extra]
 # Add custom color scheme
@@ -77,12 +82,14 @@ secondary_color = "#f59e0b" # Orange
 ```
 
 ### Change Font
+
 Add to `sass/custom.scss`:
+
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 body {
-    font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 }
 ```
 
@@ -91,6 +98,7 @@ body {
 ## 🔄 Daily Workflow
 
 ### Morning Routine
+
 ```bash
 # 1. Navigate to website folder
 cd ~/Desktop/my_website
@@ -107,6 +115,7 @@ zola build
 ```
 
 ### Adding Content from Obsidian
+
 1. Write in Obsidian as normal
 2. Run: `python3 sync_second_brain.py`
 3. Check with: `zola serve`
@@ -117,6 +126,7 @@ zola build
 ## 🚨 Quick Fixes
 
 ### Images Not Showing
+
 ```markdown
 <!-- Wrong -->
 <img src="./images/photo.jpg">
@@ -127,6 +137,7 @@ zola build
 ```
 
 ### Date Format Issues
+
 ```toml
 # Wrong
 date = "2024-12-28"
@@ -137,12 +148,15 @@ date = 2024-12-28  # No quotes!
 ```
 
 ### Link Format
+
 ```markdown
 <!-- Internal link -->
+
 [About](/about)
 [Another post](@/my-post.md)
 
 <!-- External link -->
+
 [GitHub](https://github.com)
 ```
 
@@ -192,6 +206,7 @@ git push                     # Push to GitHub
 ## 📝 Content Templates
 
 ### Standard Blog Post
+
 ```markdown
 +++
 title = "Title"
@@ -217,6 +232,7 @@ Final thoughts...
 ```
 
 ### Photo Entry
+
 ```markdown
 +++
 title = "Photo Title"
@@ -233,6 +249,7 @@ Optional story...
 ```
 
 ### Page (Not a Post)
+
 ```markdown
 +++
 title = "Page Title"
@@ -246,35 +263,16 @@ Content without date...
 
 ## 🔗 Important Paths
 
-| What | Where |
-|------|-------|
-| **Main Config** | `config.toml` |
-| **Content** | `content/` |
-| **Images** | `static/images/` |
-| **Generated Site** | `public/` |
-| **Sync Script** | `sync_second_brain.py` |
-| **Custom CSS** | `sass/custom.scss` |
-| **Templates** | `templates/` |
-| **Theme** | `themes/radion/` |
-
----
-
-## 💬 Council Integration
-
-Add perspective markers to posts:
-
-```markdown
-+++
-title = "Strategic Planning"
-date = 2024-12-28
-[extra]
-perspective = "weaver"  # or "maker" or "checker"
-+++
-
-🧵 **Weaver perspective**: Looking at the big picture...
-```
-
----
+| What               | Where                  |
+| ------------------ | ---------------------- |
+| **Main Config**    | `config.toml`          |
+| **Content**        | `content/`             |
+| **Images**         | `static/images/`       |
+| **Generated Site** | `public/`              |
+| **Sync Script**    | `sync_second_brain.py` |
+| **Custom CSS**     | `sass/custom.scss`     |
+| **Templates**      | `templates/`           |
+| **Theme**          | `themes/radion/`       |
 
 ## 🆘 Emergency Contacts
 
@@ -284,7 +282,8 @@ perspective = "weaver"  # or "maker" or "checker"
 
 ---
 
-**Remember**: 
+**Remember**:
+
 - Always `zola serve` before `zola build`
 - Keep backups of your content
 - Test on mobile regularly
@@ -292,4 +291,4 @@ perspective = "weaver"  # or "maker" or "checker"
 
 ---
 
-*Quick Guide Version 1.0 - December 2024*
+_Quick Guide Version 1.0 - December 2024_

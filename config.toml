@@ -1,5 +1,7 @@
 # The URL the site will be built for
-base_url = "https://taslimansari.com"
+#base_url = "https://taslimansari.com"
+base_url = "https://taslimism.github.io"
+
 
 # Site title and description
 title = "Taslim Ansari"

@@ -77,7 +77,7 @@ my_website/
 
 ```toml
 # Site URL - CRITICAL: Change this for production deployment
-base_url = "https://taslimansari.com"  # Your domain
+# base_url = "https://taslimansari.com"  # Your domain
 
 # Basic Site Information
 title = "Taslim Ansari"               # Browser title
