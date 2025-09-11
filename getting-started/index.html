@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      
+        <meta name="description" content="A guide to using Zola with the Radion theme" />
+        <meta property="og:description" content="A guide to using Zola with the Radion theme" />
+        <meta property="twitter:description" content="A guide to using Zola with the Radion theme" />
+      
+    
+
+    <!-- Title -->
+    
+      
+    
+    <title>
+    
+    Getting Started with Zola
+    
+</title>
+
+    <!-- Additional Facebook Meta Tags -->
+    <meta property="og:site_name" content="Taslim Ansari" />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;getting-started&#x2F;"
+    />
+    <meta
+      property="og:type"
+      content="article"
+    />
+    <meta property="og:title" content="Getting Started with Zola" />
+
+    <!-- Additional Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;getting-started&#x2F;"
+    />
+    <meta name="twitter:title" content="Getting Started with Zola" />
+
+    <!-- Cover images -->
+    
+    
+
+    <meta
+      property="og:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+
+
+    <!-- Favicons -->
+    
+
+    <!-- RSS Feed -->
+    
+
+    <!-- Load Styles -->
+    
+      <link
+        rel="stylesheet"
+        href="https://taslimism.github.io/site.css"
+      />
+    
+
+    <!-- Load Fonts -->
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Pass Theme Preference as Data Attribute -->
+    <script src="https://taslimism.github.io/js/init-theme.js"></script>
+
+    <!-- Reference return to click position script -->
+    <script defer src="https://taslimism.github.io/js/reference-return.js"></script>
+
+    <!-- Additional scripts -->
+    
+      
+        <script defer src="https://taslimism.github.io/js/codeblock.js"></script>
+      
+      
+        <script src="https://taslimism.github.io/js/toggle-theme.js"></script>
+      
+      
+<!-- MathJax script for rendering LaTeX math equations -->
+<script src="https://taslimism.github.io/js/mathjax-config.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async
+></script>
+
+
+      
+<script type="text/javascript" src="https://taslimism.github.io/elasticlunr.min.js"></script>
+<script type="text/javascript" src="https://taslimism.github.io/js/search.js"></script>
+
+    
+  </head>
+
+  <!-- Body element (contents of the page) -->
+  <body class="hack main container">
+    
+  
+    
+    
+      
+  
+  <section class="nav-header">
+    <nav
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+      class="navbar"
+    >
+      <section class="nav-links">
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/"
+        >
+          <span itemprop="name">Home</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/photos"
+        >
+          <span itemprop="name">Photos</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/categories"
+        >
+          <span itemprop="name">Categories</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/tags"
+        >
+          <span itemprop="name">Tags</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/about"
+        >
+          <span itemprop="name">About</span>
+        </a>
+        
+      </section>
+    </nav>
+    <aside class="user-actions-container">
+      
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        class="search-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+        />
+      </svg>
+      <input type="text" id="search" placeholder="Search..." />
+      <section class="search-results" aria-live="polite">
+        <article class="search-results__items" role="list"></article>
+      </section>
+       
+      <a id="dark-mode-toggle" href="#">
+        <img
+          src="https://taslimism.github.io/icons/sun.svg"
+          id="sun-icon"
+          style="filter: invert(1)"
+          alt="Light mode"
+        />
+        <img
+          src="https://taslimism.github.io/icons/moon.svg"
+          id="moon-icon"
+          alt="Dark mode"
+        />
+      </a>
+        
+      <a
+        href="https:&#x2F;&#x2F;github.com&#x2F;taslimism"
+        class="feed-icon"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://taslimism.github.io/icons/github.svg"
+          id="github-icon"
+          alt="GitHub"
+          class="social-icon"
+        />
+      </a>
+      
+    </aside>
+  </section>
+  
+
+    
+
+
+    <main>
+      
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">Getting Started with Zola</h1>
+        <data class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <data>1 minute read</data>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2025-01-14
+</data>
+    </header>
+
+    <article itemprop="articleBody">
+        
+            <p>Welcome to your new Zola site powered by the Radion theme! This post will help you get started.</p>
+
+
+            
+
+            <!-- Render the rest of the content after removing the summary portion -->
+            <span id="continue-reading"></span><h2 id="key-features">Key Features</h2>
+<p>The Radion theme comes with several built-in features:</p>
+<h3 id="1-dark-light-mode-toggle">1. Dark/Light Mode Toggle</h3>
+<p>Switch between themes using the toggle in the navigation bar.</p>
+<h3 id="2-code-highlighting">2. Code Highlighting</h3>
+<pre data-lang="rust" style="background-color:#2b303b;color:#6c7079;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#cd74e8;">fn </span><span style="color:#5cb3fa;">main</span><span style="color:#abb2bf;">() {
+</span><span style="color:#abb2bf;">    println!(</span><span style="color:#9acc76;">&quot;Hello from Zola!&quot;</span><span style="color:#abb2bf;">);
+</span><span style="color:#abb2bf;">}
+</span></code></pre>
+<h3 id="3-latex-support">3. LaTeX Support</h3>
+<p>When enabled, you can write mathematical expressions like $E = mc^2$ inline or display them:</p>
+<p>$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$</p>
+<h3 id="4-search-functionality">4. Search Functionality</h3>
+<p>Use the search bar to find content across your site.</p>
+<h2 id="writing-tips">Writing Tips</h2>
+<ul>
+<li>Use <code>&lt;!-- more --&gt;</code> to create post excerpts</li>
+<li>Add front matter with title, date, and taxonomies</li>
+<li>Organize with categories and tags</li>
+<li>Enable table of contents with <code>[extra] toc = true</code></li>
+</ul>
+<p>Happy blogging!</p>
+
+
+        
+    </article>
+
+    <!-- Comment section -->
+    
+      
+    
+
+
+    <!-- Page footer -->
+    
+    <footer>
+        <hr>
+        <p>
+            
+                Published by Taslim Raza Ansari
+            
+            
+                
+                in <a href="https://taslimism.github.io/categories/technical/">technical</a>
+            
+            
+                and
+                tagged
+                
+                    <a href="https://taslimism.github.io/tags/zola/">zola</a>
+                    
+                        
+                            
+                                ,
+                            
+                        
+                    
+                
+                    <a href="https://taslimism.github.io/tags/static-site/">static-site</a>
+                    
+                        
+                            
+                                and
+                            
+                        
+                    
+                
+                    <a href="https://taslimism.github.io/tags/tutorial/">tutorial</a>
+                    
+                        
+                    
+                
+            
+        </p>
+
+        <!-- Revision history (optional) -->
+        
+          
+        
+
+        
+        
+    </footer>
+
+
+</article>
+
+
+    </main>
+    
+
+  </body>
+</html>
