@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Taslim Ansari - beginning</title>
     <subtitle>My place on the internet</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://taslimism.github.io/taslim/tags/beginning/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://taslimism.github.io/taslim/"/>
+    <link rel="self" type="application/atom+xml" href="https://taslimism.github.io/tags/beginning/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://taslimism.github.io/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2025-01-15T00:00:00+00:00</updated>
-    <id>https://taslimism.github.io/taslim/tags/beginning/atom.xml</id>
+    <id>https://taslimism.github.io/tags/beginning/atom.xml</id>
     <entry xml:lang="en">
         <title>Hello World</title>
         <published>2025-01-15T00:00:00+00:00</published>
@@ -20,8 +20,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://taslimism.github.io/taslim/hello-world/"/>
-        <id>https://taslimism.github.io/taslim/hello-world/</id>
+        <link rel="alternate" type="text/html" href="https://taslimism.github.io/hello-world/"/>
+        <id>https://taslimism.github.io/hello-world/</id>
         
         <summary type="html">&lt;p&gt;This is your first post with the Radion theme.&lt;&#x2F;p&gt;
 </summary>
