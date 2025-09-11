@@ -1,0 +1,68 @@
+# Adding Your Own Photos
+
+To add your own photos to the gallery:
+
+## Option 1: Using External URLs (Current Setup)
+1. Create a new `.md` file in `/content/photos/`
+2. Use this template:
+
+```markdown
++++
+title = "Your Photo Title"
+date = 2025-01-15
+description = "Short description"
+
+[extra]
+image = "https://your-image-url.com/image.jpg"
+process_image = false
++++
+
+Optional longer description or story about the photo.
+```
+
+## Option 2: Using Local Images
+1. Place your image in `/static/images/`
+2. Create a `.md` file in `/content/photos/`
+3. Use this template:
+
+```markdown
++++
+title = "Your Photo Title"
+date = 2025-01-15
+description = "Short description"
+
+[extra]
+image = "/images/your-photo.jpg"
+process_image = false
++++
+
+Optional content here.
+```
+
+## Option 3: With Automatic Image Processing
+If you have large images and want Zola to automatically resize them:
+
+1. Place your image in `/content/photos/` alongside the `.md` file
+2. Use this template:
+
+```markdown
++++
+title = "Your Photo Title"
+date = 2025-01-15
+description = "Short description"
+
+[extra]
+image = "your-photo.jpg"
+process_image = true
++++
+
+Optional content here.
+```
+
+The template will automatically resize images to 400px width for faster loading.
+
+## Tips
+- Use images with varying heights for the best masonry effect
+- Keep descriptions short for cleaner hover effects
+- Images are lazy-loaded for better performance
+- The layout is responsive: 4 columns on desktop, 3 on tablet, 2 on mobile, 1 on small phones

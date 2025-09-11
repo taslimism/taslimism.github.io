@@ -1,0 +1,136 @@
+{% extends "index.html" %}
+
+{% block title %}Photos - {{ config.title }}{% endblock title %}
+
+{% block main %}
+<style>
+/* Masonry Layout for Photos */
+.photos-masonry {
+    column-count: 4;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+/* Responsive columns */
+@media (max-width: 1200px) {
+    .photos-masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .photos-masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .photos-masonry {
+        column-count: 1;
+    }
+}
+
+.photo-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1.5rem 0.75rem 0.75rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-item:hover .photo-caption {
+    opacity: 1;
+}
+
+.photo-caption h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.photo-caption p {
+    margin: 0.25rem 0 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* Dark mode adjustments */
+body[data-theme="dark"] .photo-item {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body[data-theme="dark"] .photo-item:hover {
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+}
+
+.photos-header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.photos-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.photos-header p {
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+</style>
+
+<div class="photos-header">
+    <h1>{{ section.title | default(value="Photos") }}</h1>
+    {% if section.description %}
+    <p>{{ section.description }}</p>
+    {% endif %}
+</div>
+
+<div class="photos-masonry">
+    {% for page in section.pages %}
+    <div class="photo-item">
+        {% if page.extra.image %}
+            {% if page.extra.process_image | default(value=true) %}
+                {% set image = resize_image(path=page.extra.image, width=400, op="fit_width", quality=85) %}
+                <img src="{{ image.url }}" alt="{{ page.title }}" loading="lazy">
+            {% else %}
+                <img src="{{ page.extra.image }}" alt="{{ page.title }}" loading="lazy">
+            {% endif %}
+        {% endif %}
+        <div class="photo-caption">
+            <h3>{{ page.title }}</h3>
+            {% if page.description %}
+            <p>{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock main %}
