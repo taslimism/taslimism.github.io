@@ -4,6 +4,7 @@ description = "A useful chrome-extension that makes your online reading experien
 date = 2025-08-31
 updated = 2025-08-31
 
+
 [extra]
 # Project links and status
 github_url = "https://github.com/taslimism/read_better"
@@ -20,7 +21,7 @@ team_size = 1
 role = "Developer"
 
 [taxonomies]
-tags = ["chrome-extension", "javscript", "book-reader"]
+tags = ["chrome-extension"]
 categories = ["projects"]
 +++
 

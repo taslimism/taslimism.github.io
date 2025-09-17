@@ -4,11 +4,11 @@ date = 2025-01-15
 description = "First post on the fresh site"
 
 [taxonomies]
-tags = ["meta", "beginning"]
-categories = ["general"]
+# tags = ["meta", "beginning"]
+# categories = ["general"]
 +++
 
-This is your first post with the Radion theme. 
+This is your first post with the Radion theme.
 
 <!-- more -->
 

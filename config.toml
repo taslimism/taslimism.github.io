@@ -3,7 +3,7 @@
 base_url = "https://taslimism.github.io"
 
 # Site title and description
-title = "Taslim Ansari"
+title = "Taslim Raza Ansari"
 description = "My place on the internet"
 
 # The site theme to use
@@ -29,7 +29,7 @@ insert_anchor_links = "heading"
 
 # Search configuration
 # [search]
-# index_format = "elasticlunr_json"
+index_format = "elasticlunr_json"
 
 # Radion theme configuration
 [extra]
@@ -57,7 +57,7 @@ radion_title = "Taslim Raza Ansari"
 codeblock = true
 
 # Enable MathJax support for LaTeX
-latex = true
+latex = false
 
 # Enable search bar
 # enable_search = true
