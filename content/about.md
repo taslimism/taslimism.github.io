@@ -17,7 +17,8 @@ I'm a guy without a plan and lots of curiosity.
 - Shitposting
 - Nerdposting
 - Writing
-- Sleepin
+- Sleeping
+- All normal human stuff
 - And so on and so forth
 
 ## Connect

@@ -1,0 +1,14 @@
+/// This file is the main entry point for the Sass styles of the site.
+/// It imports the theme's default styles and adds custom project styles.
+
+// Import theme's default styles using proper relative paths
+@import "../themes/radion/sass/vendor";
+@import "../themes/radion/sass/theme";
+@import "../themes/radion/sass/parts/note";
+@import "../themes/radion/sass/parts/code";
+@import "../themes/radion/sass/parts/search";
+@import "../themes/radion/sass/parts/toc";
+@import "../themes/radion/sass/parts/latex";
+
+// Import our custom projects styling
+@import "projects";

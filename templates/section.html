@@ -1,0 +1,26 @@
+{% extends "_base.html" %} {% import "macros/post_macros.html" as post_macros %}
+{% block content %} {{ super() }}
+
+<main>
+	<header><h1>{{ section.title }}</h1></header>
+
+	{% if section.content %}
+	<div class="section-intro">{{ section.content | safe }}</div>
+	{% endif %} {% for page in section.pages %} {{
+	post_macros::page_in_list(page=page) }} {% endfor %} {% if paginator %}
+	<nav aria-label="Pagination">
+		<p>
+			{% if paginator.previous %}
+			<a href="{{ paginator.previous }}">&laquo; Previous</a> | {% endif %}
+			<span
+				>Page {{ paginator.current_index }} of {{ paginator.number_pagers
+				}}</span
+			>
+			{% if paginator.next %} |
+			<a href="{{ paginator.next }}">Next &raquo;</a>
+			{% endif %}
+		</p>
+	</nav>
+	{% endif %}
+</main>
+{% endblock content %}

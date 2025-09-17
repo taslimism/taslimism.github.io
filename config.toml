@@ -1,7 +1,6 @@
 # The URL the site will be built for
 #base_url = "https://taslimansari.com"
-base_url = "https://taslimism.github.io/"
-
+base_url = "https://taslimism.github.io"
 
 # Site title and description
 title = "Taslim Ansari"
@@ -11,7 +10,7 @@ description = "My place on the internet"
 theme = "radion"
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+# build_search_index = true
 
 # Generate RSS/Atom feeds
 # generate_feeds = true
@@ -29,20 +28,22 @@ highlight_theme = "one-dark"
 insert_anchor_links = "heading"
 
 # Search configuration
-[search]
-index_format = "elasticlunr_json"
+# [search]
+# index_format = "elasticlunr_json"
 
 # Radion theme configuration
 [extra]
 # Site author
 author = "Taslim Raza Ansari"
+toc = true
 
 # GitHub profile (update with your actual username)
 github = "https://github.com/taslimism"
 
-# Navigation menu items (added Photos)
+# Navigation menu items 
 radion_menu = [
   { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/projects", name = "Projects" },
   { url = "$BASE_URL/photos", name = "Photos" },
   { url = "$BASE_URL/categories", name = "Categories" },
   { url = "$BASE_URL/tags", name = "Tags" },
@@ -59,18 +60,20 @@ codeblock = true
 latex = true
 
 # Enable search bar
-enable_search = true
+# enable_search = true
 
 # Light/Dark Mode setting
 # Options: "light", "dark", "auto", "toggle"
 theme = "toggle"
 
 # Whether to display favicon
-favicon = false
+favicon = true
 
 # Giscus comment support (disabled for now)
 comments = false
 
 # Post revision history (disabled for now)
 revision_history = false
+
+
 

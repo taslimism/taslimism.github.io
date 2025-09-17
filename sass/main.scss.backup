@@ -1,0 +1,34 @@
+/* Main stylesheet for custom Radion theme additions */
+
+/* Import our custom projects styling */
+@import "projects";
+
+/* Additional custom styles can go here */
+
+/* Ensure smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom improvements for the Radion theme */
+.container {
+    max-width: 1200px;
+}
+
+/* Make the site feel more cohesive */
+.content {
+    line-height: 1.7;
+}
+
+/* Improve code block styling */
+pre {
+    border-radius: 8px;
+    border: 1px solid var(--border, #e1e5e9);
+}
+
+/* Make images more responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
