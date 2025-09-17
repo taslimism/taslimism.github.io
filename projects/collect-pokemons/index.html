@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      
+        <meta name="description" content="A powerful Chrome extension that captures web content at a single place with extracted metadata" />
+        <meta property="og:description" content="A powerful Chrome extension that captures web content at a single place with extracted metadata" />
+        <meta property="twitter:description" content="A powerful Chrome extension that captures web content at a single place with extracted metadata" />
+      
+    
+
+    <!-- Title -->
+    
+      
+    
+    <title>
+    
+    Obsidian Universal Capture - Chrome Extension
+    
+</title>
+
+    <!-- Additional Facebook Meta Tags -->
+    <meta property="og:site_name" content="Taslim Ansari" />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;projects&#x2F;collect-pokemons&#x2F;"
+    />
+    <meta
+      property="og:type"
+      content="article"
+    />
+    <meta property="og:title" content="Obsidian Universal Capture - Chrome Extension" />
+
+    <!-- Additional Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;projects&#x2F;collect-pokemons&#x2F;"
+    />
+    <meta name="twitter:title" content="Obsidian Universal Capture - Chrome Extension" />
+
+    <!-- Cover images -->
+    
+    
+
+    <meta
+      property="og:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+
+
+    <!-- Favicons -->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Obsidian Universal Capture - Chrome Extension" />
+    <link
+      rel="manifest"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/site.webmanifest"
+    />
+    
+
+    <!-- RSS Feed -->
+    
+
+    <!-- Load Styles -->
+    
+      <link
+        rel="stylesheet"
+        href="https://taslimism.github.io/site.css"
+      />
+    
+
+    <!-- Load Fonts -->
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Pass Theme Preference as Data Attribute -->
+    <script src="https://taslimism.github.io/js/init-theme.js"></script>
+
+    <!-- Reference return to click position script -->
+    <script defer src="https://taslimism.github.io/js/reference-return.js"></script>
+
+    <!-- Additional scripts -->
+    
+      
+        <script defer src="https://taslimism.github.io/js/codeblock.js"></script>
+      
+      
+        <script src="https://taslimism.github.io/js/toggle-theme.js"></script>
+      
+      
+<!-- MathJax script for rendering LaTeX math equations -->
+<script src="https://taslimism.github.io/js/mathjax-config.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async
+></script>
+
+
+      
+    
+  </head>
+
+  <!-- Body element (contents of the page) -->
+  <body class="hack main container">
+    
+  
+    
+    
+      
+  
+  <section class="nav-header">
+    <nav
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+      class="navbar"
+    >
+      <section class="nav-links">
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/"
+        >
+          <span itemprop="name">Home</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/projects"
+        >
+          <span itemprop="name">Projects</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/photos"
+        >
+          <span itemprop="name">Photos</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/categories"
+        >
+          <span itemprop="name">Categories</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/tags"
+        >
+          <span itemprop="name">Tags</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/about"
+        >
+          <span itemprop="name">About</span>
+        </a>
+        
+      </section>
+    </nav>
+    <aside class="user-actions-container">
+       
+      <a id="dark-mode-toggle" href="#">
+        <img
+          src="https://taslimism.github.io/icons/sun.svg"
+          id="sun-icon"
+          style="filter: invert(1)"
+          alt="Light mode"
+        />
+        <img
+          src="https://taslimism.github.io/icons/moon.svg"
+          id="moon-icon"
+          alt="Dark mode"
+        />
+      </a>
+        
+      <a
+        href="https:&#x2F;&#x2F;github.com&#x2F;taslimism"
+        class="feed-icon"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://taslimism.github.io/icons/github.svg"
+          id="github-icon"
+          alt="GitHub"
+          class="social-icon"
+        />
+      </a>
+      
+    </aside>
+  </section>
+  
+
+    
+
+
+    <main>
+      
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">Obsidian Universal Capture - Chrome Extension</h1>
+        <data class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <data>3 minute read</data>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2025-08-31
+</data>
+    </header>
+
+    <article itemprop="articleBody">
+        
+            <h2 id="brain-overview">🧠 Overview</h2>
+<p>A powerful Chrome extension that captures web content directly to your Obsidian second brain. Capture text, images, links, videos, and entire pages with right-click context menus, then export everything as formatted Markdown for your knowledge base.</p>
+
+
+            
+
+            <!-- Render the rest of the content after removing the summary portion -->
+            <span id="continue-reading"></span><h2 id="dart-purpose">🎯 Purpose</h2>
+<p>Bridge the gap between web browsing and knowledge management by making it effortless to capture anything interesting you find online into your Obsidian vault. Perfect for researchers, students, content creators, and anyone building a personal knowledge management system.</p>
+<h2 id="sparkles-features">✨ Features</h2>
+<h3 id="capture-types">Capture Types</h3>
+<ul>
+<li><strong>📝 Text Selection</strong>: Capture highlighted text with full context</li>
+<li><strong>🖼️ Images</strong>: Save image URLs with metadata</li>
+<li><strong>🔗 Links</strong>: Capture links with their anchor text</li>
+<li><strong>📄 Full Pages</strong>: Extract entire page content with metadata</li>
+<li><strong>🎥 Videos</strong>: Save video sources for later reference</li>
+</ul>
+<h3 id="smart-features">Smart Features</h3>
+<ul>
+<li><strong>Context Menu Integration</strong>: Right-click anything to capture it</li>
+<li><strong>Metadata Extraction</strong>: Automatically captures:
+<ul>
+<li>Page title and URL</li>
+<li>OpenGraph metadata (og:title, og:description, og:image)</li>
+<li>Author information</li>
+<li>Article content detection</li>
+<li>Image dimensions and alt text</li>
+</ul>
+</li>
+<li><strong>Badge Counter</strong>: Shows number of pending captures</li>
+<li><strong>Batch Export</strong>: Export all captures as formatted Markdown</li>
+<li><strong>Local Storage</strong>: Keeps last 100 captures for privacy</li>
+<li><strong>Beautiful UI</strong>: Gradient design with categorized capture display</li>
+</ul>
+<h2 id="wrench-technical-architecture">🔧 Technical Architecture</h2>
+<h3 id="components">Components</h3>
+<h4 id="background-service-worker-background-js">Background Service Worker (<code>background.js</code>)</h4>
+<ul>
+<li>Creates hierarchical context menus</li>
+<li>Handles capture events from different contexts</li>
+<li>Manages Chrome storage (100 capture limit)</li>
+<li>Generates Markdown from captures</li>
+<li>Updates extension badge with capture count</li>
+</ul>
+<h4 id="content-script-content-js">Content Script (<code>content.js</code>)</h4>
+<ul>
+<li>Extracts page content and metadata</li>
+<li>Intelligent article detection using multiple selectors</li>
+<li>Image filtering (removes tiny images &lt;100px)</li>
+<li>Handles messages from background script</li>
+</ul>
+<h4 id="popup-interface-popup-html-popup-js">Popup Interface (<code>popup.html</code> &amp; <code>popup.js</code>)</h4>
+<ul>
+<li>Displays capture statistics by type</li>
+<li>Shows recent captures with time-ago formatting</li>
+<li>Export to clipboard functionality</li>
+<li>Clear all captures option</li>
+<li>Gradient purple theme with glass-morphism cards</li>
+</ul>
+<h3 id="data-structure">Data Structure</h3>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#6c7079;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="color:#abb2bf;">{
+</span><span style="color:#abb2bf;">  timestamp: </span><span style="color:#9acc76;">&quot;ISO 8601 date&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">  url: </span><span style="color:#9acc76;">&quot;page URL&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">  title: </span><span style="color:#9acc76;">&quot;page title&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">  type: </span><span style="color:#9acc76;">&quot;text|image|link|page|video&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">  content: </span><span style="color:#9acc76;">&quot;captured content&quot;</span><span style="color:#abb2bf;">,
+</span><span style="color:#abb2bf;">  metadata: {
+</span><span style="color:#abb2bf;">    </span><span style="font-style:italic;color:#5f697a;">// Type-specific metadata
+</span><span style="color:#abb2bf;">  }
+</span><span style="color:#abb2bf;">}
+</span></code></pre>
+<h2 id="file-folder-project-structure">📁 Project Structure</h2>
+<pre style="background-color:#2b303b;color:#6c7079;"><code><span style="color:#abb2bf;">second_brain/
+</span><span style="color:#abb2bf;">├── manifest.json        # Extension configuration
+</span><span style="color:#abb2bf;">├── background.js       # Service worker &amp; capture logic
+</span><span style="color:#abb2bf;">├── content.js         # Page content extraction
+</span><span style="color:#abb2bf;">├── popup.html        # Extension popup UI
+</span><span style="color:#abb2bf;">├── popup.js         # Popup functionality
+</span><span style="color:#abb2bf;">├── icons/          # Extension icons
+</span><span style="color:#abb2bf;">│   ├── icon-16.png
+</span><span style="color:#abb2bf;">│   ├── icon-48.png
+</span><span style="color:#abb2bf;">│   └── icon-128.png
+</span><span style="color:#abb2bf;">└── .git/          # Version control
+</span></code></pre>
+<h2 id="rocket-installation">🚀 Installation</h2>
+<ol>
+<li>Open Chrome → <code>chrome://extensions/</code></li>
+<li>Enable "Developer mode"</li>
+<li>Click "Load unpacked"</li>
+<li>Select the <code>second_brain</code> folder</li>
+<li>Right-click any content to start capturing!</li>
+</ol>
+<h2 id="bulb-usage-workflow">💡 Usage Workflow</h2>
+<h3 id="capturing-content">Capturing Content</h3>
+<ol>
+<li>Browse normally</li>
+<li>Right-click on any:
+<ul>
+<li>Selected text</li>
+<li>Image</li>
+<li>Link</li>
+<li>Video</li>
+<li>Or empty space for full page</li>
+</ul>
+</li>
+<li>Choose "Capture to Obsidian" → Select capture type</li>
+<li>Badge shows capture count</li>
+</ol>
+<h3 id="exporting-to-obsidian">Exporting to Obsidian</h3>
+<ol>
+<li>Click extension icon</li>
+<li>Review captures (stats &amp; list)</li>
+<li>Click "📤 Export to Obsidian"</li>
+<li>Markdown is copied to clipboard</li>
+<li>Paste into your Obsidian vault</li>
+</ol>
+<h3 id="markdown-output-format">Markdown Output Format</h3>
+<pre data-lang="markdown" style="background-color:#2b303b;color:#6c7079;" class="language-markdown "><code class="language-markdown" data-lang="markdown"><span style="color:#5cb3fa;"># Captures - [Date]
+</span><span style="color:#abb2bf;">
+</span><span style="color:#5cb3fa;">## TEXT: Article Title
+</span><span style="color:#abb2bf;">
+</span><span style="color:#eb6772;">- </span><span style="color:#f0c678;">**Time**</span><span style="color:#eb6772;">: 1/1/2024, 10:30 AM
+</span><span style="color:#eb6772;">- </span><span style="color:#f0c678;">**URL**</span><span style="color:#eb6772;">: </span><span style="color:#db9d63;">[https://example.com](https://example.com)
+</span><span style="color:#eb6772;">
+</span><span style="color:#db9d63;">&gt; Captured text content here
+</span><span style="color:#abb2bf;">
+</span><span style="background-color:#515151;color:#adb7c9;">---
+</span><span style="color:#abb2bf;">
+</span><span style="color:#5cb3fa;">## IMAGE: Page Title
+</span><span style="color:#abb2bf;">
+</span><span style="color:#eb6772;">- </span><span style="color:#f0c678;">**Time**</span><span style="color:#eb6772;">: 1/1/2024, 10:31 AM
+</span><span style="color:#eb6772;">- </span><span style="color:#f0c678;">**URL**</span><span style="color:#eb6772;">: </span><span style="color:#db9d63;">[https://example.com](https://example.com)
+</span><span style="color:#eb6772;">
+</span><span style="color:#abb2bf;">![Image](https://image-url.jpg)
+</span><span style="color:#abb2bf;">
+</span><span style="background-color:#515151;color:#adb7c9;">---
+</span></code></pre>
+<h2 id="art-design-features">🎨 Design Features</h2>
+<ul>
+<li><strong>Gradient Background</strong>: Purple gradient (135deg, #667eea → #764ba2)</li>
+<li><strong>Glass-morphism Cards</strong>: Semi-transparent white overlays</li>
+<li><strong>Type Badges</strong>: Color-coded capture type indicators</li>
+<li><strong>Responsive Stats</strong>: Real-time capture counting</li>
+<li><strong>Smooth Animations</strong>: Hover effects and transitions</li>
+</ul>
+<h2 id="lock-privacy-security">🔒 Privacy &amp; Security</h2>
+<ul>
+<li><strong>Local Storage Only</strong>: All captures stored locally in Chrome</li>
+<li><strong>No External Servers</strong>: No data sent to third parties</li>
+<li><strong>100 Capture Limit</strong>: Automatic cleanup of old captures</li>
+<li><strong>Manual Export</strong>: You control when and what to export</li>
+</ul>
+<h2 id="construction-future-enhancements-todos-in-code">🚧 Future Enhancements (TODOs in code)</h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Direct Obsidian vault integration via local API</li>
+<li><input disabled="" type="checkbox"/>
+AI-powered auto-tagging of captures</li>
+<li><input disabled="" type="checkbox"/>
+Customizable capture templates</li>
+<li><input disabled="" type="checkbox"/>
+Bulk editing before export</li>
+<li><input disabled="" type="checkbox"/>
+Cloud sync option</li>
+<li><input disabled="" type="checkbox"/>
+Capture history search</li>
+<li><input disabled="" type="checkbox"/>
+Custom hotkeys for quick capture</li>
+<li><input disabled="" type="checkbox"/>
+Advanced filtering and sorting</li>
+</ul>
+<h2 id="electric-plug-permissions-used">🔌 Permissions Used</h2>
+<ul>
+<li><code>contextMenus</code>: Right-click capture functionality</li>
+<li><code>storage</code>: Local capture storage</li>
+<li><code>activeTab</code>: Current tab information</li>
+<li><code>tabs</code>: Tab metadata access</li>
+<li><code>clipboardWrite</code>: Copy markdown to clipboard</li>
+<li><code>host_permissions</code>: Access to all websites for content extraction</li>
+</ul>
+<h2 id="mortar-board-perfect-for">🎓 Perfect For</h2>
+<ul>
+<li><strong>Researchers</strong>: Collect sources and quotes</li>
+<li><strong>Students</strong>: Gather study materials</li>
+<li><strong>Writers</strong>: Capture inspiration and references</li>
+<li><strong>Developers</strong>: Save code snippets and documentation</li>
+<li><strong>Content Creators</strong>: Collect ideas and resources</li>
+</ul>
+<h2 id="memo-version">📝 Version</h2>
+<p><strong>1.0.0</strong> - Initial release with core capture functionality</p>
+<h2 id="label-status">🏷️ Status</h2>
+<p><strong>Active Development</strong> - Functional capture system with Obsidian export via clipboard. Direct vault integration planned for future releases.</p>
+
+
+        
+    </article>
+
+    <!-- Comment section -->
+    
+      
+    
+
+
+    <!-- Page footer -->
+    
+    <footer>
+        <hr>
+        <p>
+            
+                Published by Taslim Raza Ansari
+            
+            
+                
+                in <a href="https://taslimism.github.io/categories/projects/">projects</a>
+            
+            
+                and
+                tagged
+                
+                    <a href="https://taslimism.github.io/tags/chrome-extension/">chrome-extension</a>
+                    
+                
+            
+        </p>
+
+        <!-- Revision history (optional) -->
+        
+          
+        
+
+        
+        
+    </footer>
+
+
+</article>
+
+
+    </main>
+    
+
+  </body>
+</html>

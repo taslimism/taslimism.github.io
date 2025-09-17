@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+      
+        <meta name="description" content="A useful chrome-extension that makes your online reading experience better" />
+        <meta property="og:description" content="A useful chrome-extension that makes your online reading experience better" />
+        <meta property="twitter:description" content="A useful chrome-extension that makes your online reading experience better" />
+      
+    
+
+    <!-- Title -->
+    
+      
+    
+    <title>
+    
+    Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length
+    
+</title>
+
+    <!-- Additional Facebook Meta Tags -->
+    <meta property="og:site_name" content="Taslim Ansari" />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;projects&#x2F;better-book-reader&#x2F;"
+    />
+    <meta
+      property="og:type"
+      content="article"
+    />
+    <meta property="og:title" content="Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length" />
+
+    <!-- Additional Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;projects&#x2F;better-book-reader&#x2F;"
+    />
+    <meta name="twitter:title" content="Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length" />
+
+    <!-- Cover images -->
+    
+    
+
+    <meta
+      property="og:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https:&#x2F;&#x2F;taslimism.github.io&#x2F;icons&#x2F;favicon&#x2F;web-app-manifest-512x512.png"
+    />
+
+
+
+    <!-- Favicons -->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length" />
+    <link
+      rel="manifest"
+      href="https:&#x2F;&#x2F;taslimism.github.io/icons/favicon/site.webmanifest"
+    />
+    
+
+    <!-- RSS Feed -->
+    
+
+    <!-- Load Styles -->
+    
+      <link
+        rel="stylesheet"
+        href="https://taslimism.github.io/site.css"
+      />
+    
+
+    <!-- Load Fonts -->
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Pass Theme Preference as Data Attribute -->
+    <script src="https://taslimism.github.io/js/init-theme.js"></script>
+
+    <!-- Reference return to click position script -->
+    <script defer src="https://taslimism.github.io/js/reference-return.js"></script>
+
+    <!-- Additional scripts -->
+    
+      
+        <script defer src="https://taslimism.github.io/js/codeblock.js"></script>
+      
+      
+        <script src="https://taslimism.github.io/js/toggle-theme.js"></script>
+      
+      
+<!-- MathJax script for rendering LaTeX math equations -->
+<script src="https://taslimism.github.io/js/mathjax-config.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async
+></script>
+
+
+      
+    
+  </head>
+
+  <!-- Body element (contents of the page) -->
+  <body class="hack main container">
+    
+  
+    
+    
+      
+  
+  <section class="nav-header">
+    <nav
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+      class="navbar"
+    >
+      <section class="nav-links">
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/"
+        >
+          <span itemprop="name">Home</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/projects"
+        >
+          <span itemprop="name">Projects</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/photos"
+        >
+          <span itemprop="name">Photos</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/categories"
+        >
+          <span itemprop="name">Categories</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/tags"
+        >
+          <span itemprop="name">Tags</span>
+        </a>
+        
+        <a
+          itemprop="url"
+          class=""
+          href="https://taslimism.github.io/about"
+        >
+          <span itemprop="name">About</span>
+        </a>
+        
+      </section>
+    </nav>
+    <aside class="user-actions-container">
+       
+      <a id="dark-mode-toggle" href="#">
+        <img
+          src="https://taslimism.github.io/icons/sun.svg"
+          id="sun-icon"
+          style="filter: invert(1)"
+          alt="Light mode"
+        />
+        <img
+          src="https://taslimism.github.io/icons/moon.svg"
+          id="moon-icon"
+          alt="Dark mode"
+        />
+      </a>
+        
+      <a
+        href="https:&#x2F;&#x2F;github.com&#x2F;taslimism"
+        class="feed-icon"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://taslimism.github.io/icons/github.svg"
+          id="github-icon"
+          alt="GitHub"
+          class="social-icon"
+        />
+      </a>
+      
+    </aside>
+  </section>
+  
+
+    
+
+
+    <main>
+      
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length</h1>
+        <data class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <data>4 minute read</data>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2025-08-31
+</data>
+    </header>
+
+    <article itemprop="articleBody">
+        
+            <h2 id="books-overview">📚 Overview</h2>
+<p>A Chrome extension that transforms online programming books into comfortable, distraction-free reading experiences. Specifically optimized for "Automate the Boring Stuff with Python" and other books on automatetheboringstuff.com, making long reading sessions easier on your eyes.</p>
+
+
+            
+
+            <!-- Render the rest of the content after removing the summary portion -->
+            <span id="continue-reading"></span><h2 id="dart-purpose">🎯 Purpose</h2>
+<p>Online programming books often have poor typography with lines that stretch across the entire screen, making them difficult to read. This extension applies research-backed readability improvements to create an experience similar to well-designed ebooks or Medium articles.</p>
+<h2 id="sparkles-features">✨ Features</h2>
+<h3 id="core-reading-improvements">Core Reading Improvements</h3>
+<ul>
+<li><strong>Optimal Line Length</strong>: Constrains text to ~700px width (approximately 65-75 characters per line)</li>
+<li><strong>Professional Typography</strong>: Georgia serif font for body text, improving readability for long-form content</li>
+<li><strong>Generous Spacing</strong>: 1.8x line height reduces eye strain during extended reading</li>
+<li><strong>Dark Mode</strong>: Perfect for late-night coding sessions or reducing eye fatigue</li>
+<li><strong>Adjustable Font Size</strong>: Scale from 14px to 24px based on your preference</li>
+</ul>
+<h3 id="smart-features">Smart Features</h3>
+<ul>
+<li><strong>Auto-Activation</strong>: Reading mode enables automatically on supported sites</li>
+<li><strong>Persistent Settings</strong>: Remembers your preferences across sessions</li>
+<li><strong>Clean Layout</strong>: Removes distractions while preserving navigation</li>
+<li><strong>Code Block Enhancement</strong>: Improved formatting and contrast for code examples</li>
+<li><strong>Smooth Transitions</strong>: Elegant animations when toggling modes</li>
+</ul>
+<h2 id="wrench-technical-details">🔧 Technical Details</h2>
+<h3 id="architecture">Architecture</h3>
+<ul>
+<li><strong>Content Script</strong>: Injects CSS and manages reading mode state</li>
+<li><strong>Popup Interface</strong>: Clean settings panel with toggle switches</li>
+<li><strong>Chrome Storage API</strong>: Saves user preferences persistently</li>
+<li><strong>CSS Override System</strong>: Uses <code>!important</code> declarations to ensure consistent styling</li>
+</ul>
+<h3 id="typography-choices">Typography Choices</h3>
+<ul>
+<li><strong>Body Font</strong>: Georgia (serif) - Better for sustained reading</li>
+<li><strong>Headers</strong>: System fonts (San Francisco, Segoe UI) - Clear hierarchy</li>
+<li><strong>Code</strong>: Consolas/Monaco (monospace) - Optimal for code readability</li>
+<li><strong>Line Height</strong>: 1.8 - Research shows this reduces reading fatigue</li>
+</ul>
+<h3 id="color-schemes">Color Schemes</h3>
+<h4 id="light-mode">Light Mode</h4>
+<ul>
+<li>Background: <code>#f9f7f4</code> (Warm off-white)</li>
+<li>Text: <code>#333</code> (Soft black)</li>
+<li>Links: <code>#4a90e2</code> (Accessible blue)</li>
+<li>Code Background: <code>#f5f5f5</code></li>
+</ul>
+<h4 id="dark-mode">Dark Mode</h4>
+<ul>
+<li>Background: <code>#1a1a1a</code></li>
+<li>Container: <code>#2a2a2a</code></li>
+<li>Text: <code>#e0e0e0</code></li>
+<li>Links: <code>#6db3f2</code></li>
+<li>Code Background: <code>#1e1e1e</code></li>
+</ul>
+<h2 id="file-folder-project-structure">📁 Project Structure</h2>
+<pre style="background-color:#2b303b;color:#6c7079;"><code><span style="color:#abb2bf;">better-book-reader/
+</span><span style="color:#abb2bf;">├── manifest.json       # Extension configuration
+</span><span style="color:#abb2bf;">├── content.css        # Reading mode styles
+</span><span style="color:#abb2bf;">├── content.js        # State management &amp; settings
+</span><span style="color:#abb2bf;">├── popup.html       # Settings interface
+</span><span style="color:#abb2bf;">├── popup.js        # Popup functionality
+</span><span style="color:#abb2bf;">└── README.md      # Documentation
+</span></code></pre>
+<h2 id="rocket-installation">🚀 Installation</h2>
+<h3 id="quick-install">Quick Install</h3>
+<ol>
+<li>Open Chrome → <code>chrome://extensions/</code></li>
+<li>Enable <strong>"Developer mode"</strong> (top-right toggle)</li>
+<li>Click <strong>"Load unpacked"</strong></li>
+<li>Select this folder: <code>/Users/taslim/Desktop/fun_projects/my_chrome_extensions/better-book-reader</code></li>
+<li>Visit https://automatetheboringstuff.com/3e/chapter1.html</li>
+<li>Enjoy comfortable reading! 📖</li>
+</ol>
+<h3 id="first-use">First Use</h3>
+<ul>
+<li>Extension activates automatically on supported sites</li>
+<li>Click the extension icon to access settings</li>
+<li>Toggle dark mode with one click</li>
+<li>Adjust font size with the slider</li>
+</ul>
+<h2 id="bulb-usage-tips">💡 Usage Tips</h2>
+<h3 id="keyboard-reading">Keyboard Reading</h3>
+<ul>
+<li>Use arrow keys to navigate between sections</li>
+<li>Space bar for page-down scrolling</li>
+<li>Combine with browser zoom for additional control</li>
+</ul>
+<h3 id="best-settings">Best Settings</h3>
+<ul>
+<li><strong>Daytime</strong>: Light mode, 18px font</li>
+<li><strong>Night</strong>: Dark mode, 16-20px font</li>
+<li><strong>Large Monitor</strong>: 20-22px font</li>
+<li><strong>Laptop</strong>: 16-18px font</li>
+</ul>
+<h2 id="art-design-philosophy">🎨 Design Philosophy</h2>
+<h3 id="research-based-decisions">Research-Based Decisions</h3>
+<ol>
+<li><strong>Line Length</strong>: 45-75 characters is optimal for reading comprehension</li>
+<li><strong>Serif Fonts</strong>: Guide the eye along text lines, crucial for technical content</li>
+<li><strong>Warm Background</strong>: Reduces harsh contrast compared to pure white</li>
+<li><strong>Generous Spacing</strong>: Prevents line confusion and reduces cognitive load</li>
+</ol>
+<h3 id="user-experience-principles">User Experience Principles</h3>
+<ul>
+<li><strong>Zero Configuration</strong>: Works immediately after installation</li>
+<li><strong>Respectful Defaults</strong>: Enhances without disrupting</li>
+<li><strong>User Control</strong>: Every aspect is customizable</li>
+<li><strong>Performance</strong>: Minimal impact on page load</li>
+</ul>
+<h2 id="bar-chart-impact-metrics">📊 Impact Metrics</h2>
+<h3 id="before-extension">Before Extension</h3>
+<ul>
+<li>Line length: 120-150+ characters</li>
+<li>Font: System default (often Arial/Helvetica)</li>
+<li>Line height: 1.2-1.4x</li>
+<li>Full-width layout</li>
+<li>No reading optimization</li>
+</ul>
+<h3 id="after-extension">After Extension</h3>
+<ul>
+<li>Line length: 65-75 characters ✅</li>
+<li>Font: Georgia serif (optimized for reading) ✅</li>
+<li>Line height: 1.8x (reduces eye strain) ✅</li>
+<li>Centered, focused layout ✅</li>
+<li>Dark mode option ✅</li>
+</ul>
+<h2 id="arrows-counterclockwise-version-history">🔄 Version History</h2>
+<h3 id="v1-0-0-current">v1.0.0 (Current)</h3>
+<ul>
+<li>Initial release</li>
+<li>Core reading mode functionality</li>
+<li>Dark mode support</li>
+<li>Font size adjustment</li>
+<li>Auto-activation on automatetheboringstuff.com</li>
+</ul>
+<h2 id="construction-roadmap">🚧 Roadmap</h2>
+<h3 id="planned-features">Planned Features</h3>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Support for more programming book sites</li>
+<li><input disabled="" type="checkbox"/>
+Customizable color themes</li>
+<li><input disabled="" type="checkbox"/>
+Reading progress tracking</li>
+<li><input disabled="" type="checkbox"/>
+Bookmark functionality</li>
+<li><input disabled="" type="checkbox"/>
+Export to PDF with formatting</li>
+<li><input disabled="" type="checkbox"/>
+Multiple font choices</li>
+<li><input disabled="" type="checkbox"/>
+Reading time estimates</li>
+<li><input disabled="" type="checkbox"/>
+Syntax highlighting improvements</li>
+</ul>
+<h3 id="potential-sites-to-support">Potential Sites to Support</h3>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Real Python tutorials</li>
+<li><input disabled="" type="checkbox"/>
+MDN Web Docs</li>
+<li><input disabled="" type="checkbox"/>
+Python.org documentation</li>
+<li><input disabled="" type="checkbox"/>
+Other Al Sweigart books</li>
+<li><input disabled="" type="checkbox"/>
+Free programming books on GitHub</li>
+</ul>
+<h2 id="bug-known-issues">🐛 Known Issues</h2>
+<ul>
+<li>Font size changes require page refresh on some pages</li>
+<li>Navigation menu might need manual adjustment on some chapters</li>
+</ul>
+<h2 id="handshake-credits">🤝 Credits</h2>
+<h3 id="created-by">Created by</h3>
+<p><strong>Maker</strong> 🔨 - Taslim Raza Ansari</p>
+<h3 id="inspired-by">Inspired by</h3>
+<ul>
+<li>Medium's reading experience</li>
+<li>Safari Reader Mode</li>
+<li>Research on typography and readability</li>
+</ul>
+<h2 id="memo-license">📝 License</h2>
+<p>Personal project for educational and productivity purposes</p>
+<h2 id="label-tags">🏷️ Tags</h2>
+<p><code>chrome-extension</code> <code>reading-mode</code> <code>typography</code> <code>python-books</code> <code>productivity</code> <code>accessibility</code></p>
+<hr />
+<p><em>Making technical books as pleasant to read as they are valuable to learn from</em> 📚</p>
+
+
+        
+    </article>
+
+    <!-- Comment section -->
+    
+      
+    
+
+
+    <!-- Page footer -->
+    
+    <footer>
+        <hr>
+        <p>
+            
+                Published by Taslim Raza Ansari
+            
+            
+                
+                in <a href="https://taslimism.github.io/categories/projects/">projects</a>
+            
+            
+                and
+                tagged
+                
+                    <a href="https://taslimism.github.io/tags/chrome-extension/">chrome-extension</a>
+                    
+                        
+                            
+                                ,
+                            
+                        
+                    
+                
+                    <a href="https://taslimism.github.io/tags/javscript/">javscript</a>
+                    
+                        
+                            
+                                and
+                            
+                        
+                    
+                
+                    <a href="https://taslimism.github.io/tags/book-reader/">book-reader</a>
+                    
+                        
+                    
+                
+            
+        </p>
+
+        <!-- Revision history (optional) -->
+        
+          
+        
+
+        
+        
+    </footer>
+
+
+</article>
+
+
+    </main>
+    
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Taslim Ansari - chrome-extension</title>
+    <subtitle>My place on the internet</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://taslimism.github.io/tags/chrome-extension/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://taslimism.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-08-31T00:00:00+00:00</updated>
+    <id>https://taslimism.github.io/tags/chrome-extension/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Read [Invent With Python Books](https:&#x2F;&#x2F;inventwithpython.com&#x2F;) with readable line length</title>
+        <published>2025-08-31T00:00:00+00:00</published>
+        <updated>2025-08-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://taslimism.github.io/projects/better-book-reader/"/>
+        <id>https://taslimism.github.io/projects/better-book-reader/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;books-overview&quot;&gt;📚 Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;A Chrome extension that transforms online programming books into comfortable, distraction-free reading experiences. Specifically optimized for &quot;Automate the Boring Stuff with Python&quot; and other books on automatetheboringstuff.com, making long reading sessions easier on your eyes.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Obsidian Universal Capture - Chrome Extension</title>
+        <published>2025-08-31T00:00:00+00:00</published>
+        <updated>2025-08-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://taslimism.github.io/projects/collect-pokemons/"/>
+        <id>https://taslimism.github.io/projects/collect-pokemons/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;brain-overview&quot;&gt;🧠 Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;A powerful Chrome extension that captures web content directly to your Obsidian second brain. Capture text, images, links, videos, and entire pages with right-click context menus, then export everything as formatted Markdown for your knowledge base.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
