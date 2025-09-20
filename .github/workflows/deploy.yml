@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true # this is required to pull the Radion theme
+          submodules: false # this is required to pull the Radion theme
 
       - name: Install Zola
         run: |
