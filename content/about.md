@@ -15,7 +15,6 @@ I'm a guy without a plan and lots of curiosity.
 
 - Software development
 - Shitposting
-- Nerdposting
 - Writing
 - Sleeping
 - All normal human stuff
