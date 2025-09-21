@@ -29,6 +29,8 @@ categories = ["projects"]
 
 A Chrome extension that transforms online programming books into comfortable, distraction-free reading experiences. Specifically optimized for "Automate the Boring Stuff with Python" and other books on automatetheboringstuff.com, making long reading sessions easier on your eyes.
 
+[github](https://github.com/taslimism/read_better)
+
 <!-- more -->
 
 ## 🎯 Purpose

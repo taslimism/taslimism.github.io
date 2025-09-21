@@ -4,7 +4,7 @@ date = 2025-09-16
 description = "let's say we have one heavy component and we want to add modal to that app."
 
 [taxonomies]
-tags = ["react"]
+# tags = ["react"]
 categories = ["technical"]
 +++
 
