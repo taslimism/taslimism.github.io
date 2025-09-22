@@ -11,6 +11,9 @@
         <loc>https://taslimism.github.io/categories/</loc>
     </url>
     <url>
+        <loc>https://taslimism.github.io/categories/general/</loc>
+    </url>
+    <url>
         <loc>https://taslimism.github.io/categories/projects/</loc>
     </url>
     <url>
@@ -38,6 +41,10 @@
     <url>
         <loc>https://taslimism.github.io/music-mysticism/</loc>
         <lastmod>2025-07-29</lastmod>
+    </url>
+    <url>
+        <loc>https://taslimism.github.io/my-professional-story/</loc>
+        <lastmod>2025-09-22</lastmod>
     </url>
     <url>
         <loc>https://taslimism.github.io/page/1/</loc>
@@ -149,7 +156,19 @@
         <loc>https://taslimism.github.io/tags/chrome-extension/</loc>
     </url>
     <url>
+        <loc>https://taslimism.github.io/tags/development/</loc>
+    </url>
+    <url>
+        <loc>https://taslimism.github.io/tags/growth/</loc>
+    </url>
+    <url>
         <loc>https://taslimism.github.io/tags/life/</loc>
+    </url>
+    <url>
+        <loc>https://taslimism.github.io/tags/programming/</loc>
+    </url>
+    <url>
+        <loc>https://taslimism.github.io/tags/web/</loc>
     </url>
     <url>
         <loc>https://taslimism.github.io/tags/writing/</loc>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Taslim Raza Ansari - web</title>
+    <subtitle>My place on the internet</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://taslimism.github.io/tags/web/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://taslimism.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-22T00:00:00+00:00</updated>
+    <id>https://taslimism.github.io/tags/web/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My Professional Story</title>
+        <published>2025-09-22T00:00:00+00:00</published>
+        <updated>2025-09-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://taslimism.github.io/my-professional-story/"/>
+        <id>https://taslimism.github.io/my-professional-story/</id>
+        
+        <summary type="html">&lt;p&gt;i studied electronics and communication engineering in my bachelors because i wanted to keep my options open. during the course i found myself drawn to specific subjects (and chapters) like electromagnetic theory, fourier analysis, communication systems, digital electronics, numerical methods, C programming and data structures and algorithms. these weren&#x27;t just subjects to pass - they made me curious about how things actually work.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
