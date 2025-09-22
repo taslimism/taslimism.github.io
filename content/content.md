@@ -8,11 +8,9 @@ tags = ["life"]
 categories = ["thoughts"]
 +++
 
-consuming content is a deeply personal thing.
+consuming content is a deeply personal thing. our liking is shaped by our experiences in life. people who have never consumed art which resonated with them, never build taste and never truly enjoy art, it just becomes another form of social signalling. 
 
 <!-- more -->
-
-our liking is shaped by our experiences in life. people who have never consumed art which resonated with them, never build taste and never truly enjoy art, it just becomes another form of social signalling.
 
 they can never watch a movie before looking at their imdb ratings, cannot enjoy songs by not so mainstream artists, kabhi aise comedian ko nahi suna jisey sun ke pet se hasi aaye, naa ki smjh kr, appreciate kr hasna pade. kyun bhai? why bro? its like they need permission of an authority to like what they like.
 
