@@ -1,6 +1,6 @@
 +++
 title = "My Professional Story"
-date = 2025-09-22
+date = 2025-09-23
 description = "i studied electronics and communication engineering in my bachelors because i wanted to keep my opti..."
 
 [taxonomies]
@@ -38,8 +38,10 @@ then i started interviewing more broadly and got a remote role with a US-based s
 
 there i got to work across the entire stack - designing, frontend, backend, scripting, deployment, setting up CI/CD pipelines, and configuring servers on AWS. it was the kind of comprehensive experience you get at early-stage startups. we worked intensively, sometimes late into the night with the whole team on calls, pushing to meet critical deadlines.
 
-i gave my best effort there for one year and 7 months, learning constantly and taking on increasing responsibility as our product and team grew. however, as the codebase expanded rapidly, we faced the typical challenges of fast-growing startups - technical debt, system stability issues, and the constant pressure to ship features quickly while maintaining quality.
+there i worked intensively for a year and a half, learning constantly and taking on increasing responsibility as our product and clients grew. we often worked late into the night with the whole team on calls, pushing to meet critical deadlines. as the codebase expanded rapidly, we faced the typical challenges of fast-growing startups - technical debt, system stability issues, and the constant pressure to ship features quickly while maintaining quality.
 
-eventually i realized i needed to step back and reassess what kind of work environment would let me do my best technical work sustainably. after taking some time to recharge and reflect, i'm now looking for an organization where i can apply all this experience - the deep technical skills, the startup agility, and the full-stack versatility - in an environment that values both high-quality engineering and sustainable work practices.
+after this intensive period, following my 9 months of self-study and 9 months at the first startup, i hit a point where i was completely burned out. i had been in high-performance mode for over two years straight. my engagement dropped significantly - i started showing up late and taking frequent time off because i honestly had nothing left to give. management understandably needed consistent performance, so we had direct conversations about the situation. while they valued my technical contributions enough to offer freelance opportunities and discuss me returning after i recharged, i realized i needed to step back completely to recover and figure out how to work sustainably long-term.
+
+after taking time to recharge and reflect, i'm now looking for an organization where i can apply all this experience - the deep technical skills, the startup agility, and the full-stack versatility - in an environment that values both high-quality engineering and sustainable work practices. this experience taught me the importance of recognizing my limits and maintaining sustainable performance rather than burning out from giving everything at once.
 
 what excites me most is the opportunity to work with teams that understand the importance of building robust, scalable systems while maintaining a culture that supports continuous learning and growth. i want to contribute to building products that matter, using the comprehensive skill set i've developed across the full development lifecycle.
